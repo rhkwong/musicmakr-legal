@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MusicMakr</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #e0e0e0; background: #0d0d0d; padding: 2rem 1rem; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; color: #fff; }
+    h2 { font-size: 1.35rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #fff; border-bottom: 1px solid #222; padding-bottom: 0.4rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #ccc; }
+    p, li { margin-bottom: 0.6rem; }
+    ul { padding-left: 1.5rem; }
+    a { color: #6ea8fe; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: #888; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>MusicMakr</strong> &mdash; Last updated: February 17, 2026</p>
+
+    <h2>Overview</h2>
+    <p>MusicMakr is an open-source command-line tool for AI-powered music and video creation. This privacy policy explains what data MusicMakr collects, how it is used, and your rights regarding that data.</p>
+
+    <h2>Data We Collect</h2>
+
+    <h3>API Credentials</h3>
+    <p>MusicMakr requires API keys and authentication tokens to interact with third-party services (OpenAI, MiniMax, ElevenLabs, Runway, Suno, YouTube, TikTok). These credentials are stored locally on your machine in <code>.env</code> files or environment variables. MusicMakr does not transmit your credentials to any server other than the respective API provider.</p>
+
+    <h3>Generated Content</h3>
+    <p>All content generated through MusicMakr (lyrics, audio files, video files) is stored locally in your project directories. MusicMakr does not collect, store, or transmit your generated content to any server controlled by us.</p>
+
+    <h3>Social Media Account Access</h3>
+    <p>When you connect MusicMakr to social media platforms (YouTube, TikTok), MusicMakr uses OAuth 2.0 to obtain access tokens scoped to content uploading. MusicMakr:</p>
+    <ul>
+      <li>Only requests permissions necessary for uploading content</li>
+      <li>Stores OAuth tokens locally on your machine</li>
+      <li>Does not access your social media data beyond what is required for posting</li>
+      <li>Does not read your followers, messages, or engagement data</li>
+    </ul>
+
+    <h3>Usage Data</h3>
+    <p>MusicMakr does not collect analytics, telemetry, crash reports, or any usage data. The tool runs entirely on your local machine.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>MusicMakr integrates with the following third-party services, each governed by their own privacy policies:</p>
+    <ul>
+      <li><strong>OpenAI</strong> &mdash; Lyrics and prompt generation (<a href="https://openai.com/privacy">Privacy Policy</a>)</li>
+      <li><strong>MiniMax</strong> &mdash; Music generation (<a href="https://www.minimax.io/privacy">Privacy Policy</a>)</li>
+      <li><strong>ElevenLabs</strong> &mdash; Music generation (<a href="https://elevenlabs.io/privacy">Privacy Policy</a>)</li>
+      <li><strong>Runway</strong> &mdash; Video generation (<a href="https://runwayml.com/privacy-policy">Privacy Policy</a>)</li>
+      <li><strong>Suno</strong> &mdash; Music generation (<a href="https://suno.com/privacy">Privacy Policy</a>)</li>
+      <li><strong>YouTube / Google</strong> &mdash; Video uploading (<a href="https://policies.google.com/privacy">Privacy Policy</a>)</li>
+      <li><strong>TikTok</strong> &mdash; Video uploading (<a href="https://www.tiktok.com/legal/privacy-policy">Privacy Policy</a>)</li>
+    </ul>
+    <p>When you use these services through MusicMakr, your data (prompts, audio, video) is sent directly to the respective provider. We encourage you to review each provider's privacy policy.</p>
+
+    <h2>Data Storage and Security</h2>
+    <ul>
+      <li>All data is stored locally on your machine</li>
+      <li>No data is sent to any MusicMakr-operated server</li>
+      <li>API keys and tokens are stored in plaintext in local files &mdash; you are responsible for securing your machine and <code>.env</code> files</li>
+      <li>We recommend adding <code>.env</code> to your <code>.gitignore</code> to avoid accidentally committing credentials</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>MusicMakr is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>Your Rights</h2>
+    <p>Since MusicMakr does not collect or store your data on any remote server, there is no personal data for us to delete, export, or modify. All data remains under your control on your local machine.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be reflected in the "Last updated" date above and published in the project repository.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, please open an issue on the <a href="https://github.com/rhkwong/musicmakr">MusicMakr GitHub repository</a>.</p>
+  </div>
+</body>
+</html>
